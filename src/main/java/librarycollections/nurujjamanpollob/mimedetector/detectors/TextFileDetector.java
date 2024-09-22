@@ -2,9 +2,9 @@
 jMimeMagic (TM) is a Java Library for determining the content type of files or streams
 Copyright (C) 2003-2017 David Castro
 */
-package net.sf.jmimemagic.detectors;
+package librarycollections.nurujjamanpollob.mimedetector.detectors;
 
-import net.sf.jmimemagic.MagicDetector;
+import librarycollections.nurujjamanpollob.mimedetector.MagicDetector;
 
 import org.apache.commons.io.ByteOrderMark;
 import org.apache.commons.io.IOUtils;

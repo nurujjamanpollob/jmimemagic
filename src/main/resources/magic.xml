@@ -3539,8 +3539,8 @@
 <match>
 	<mimetype>text/plain</mimetype>
 	<extension></extension>
-	<description>net.sf.jmimemagic.detectors.TextFileDetector</description>
-	<test type="detector" offset="0" length="" bitmask="" comparator="=">net.sf.jmimemagic.detectors.TextFileDetector</test>
+	<description>librarycollections.nurujjamanpollob.mimedetector.detectors.TextFileDetector</description>
+	<test type="detector" offset="0" length="" bitmask="" comparator="=">librarycollections.nurujjamanpollob.mimedetector.detectors.TextFileDetector</test>
 </match>
 <match>
 	<mimetype>application/vnd.oasis.opendocument.text</mimetype>

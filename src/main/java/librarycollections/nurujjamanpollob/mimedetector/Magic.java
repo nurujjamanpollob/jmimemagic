@@ -2,12 +2,11 @@
 jMimeMagic (TM) is a Java Library for determining the content type of files or streams
 Copyright (C) 2003-2017 David Castro
 */
-package net.sf.jmimemagic;
+package librarycollections.nurujjamanpollob.mimedetector;
 
 
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintStream;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -187,7 +186,7 @@ public class Magic
      * get a match from a file
      *
      * @param file the file to match content in
-     * @param extensionHints whether to use extension to optimize order of content tests
+     * @param extensionHints whether to use an extension to optimize order of content tests
      *
      * @return the MagicMatch object representing a match in the file
      *

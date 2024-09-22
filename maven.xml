@@ -1,11 +1,12 @@
-<project xmlns:maven="jelly:maven" 
-	xmlns:ant="jelly:ant" 
-	xmlns:j="jelly:core" 
-	xmlns:u="jelly:util" 
-	xmlns:artifact="artifact">
+<project xmlns:maven="jelly:maven"
+		 xmlns:ant="jelly:ant"
+		 xmlns:j="jelly:core"
+		 xmlns:u="jelly:util"
+		 xmlns:artifact="artifact" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="jelly:core ">
 
 	<goal name="run">
-    	<attainGoal name="jar:jar"/>
+		<attainGoal name="jar:jar"/>
 
 		<echo message="Running ${class} ${args}"/>
 

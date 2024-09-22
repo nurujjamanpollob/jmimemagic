@@ -2,7 +2,7 @@
 jMimeMagic (TM) is a Java Library for determining the content type of files or streams
 Copyright (C) 2003-2017 David Castro
 */
-package net.sf.jmimemagic;
+package librarycollections.nurujjamanpollob.mimedetector;
 
 import org.xml.sax.*;
 import org.xml.sax.helpers.DefaultHandler;
@@ -329,7 +329,7 @@ public class MagicParser extends DefaultHandler implements ContentHandler, Error
         // need to save the current matcher here if it is filled out enough and
         // we have an /matcher
         switch (localName) {
-            case "match":
+            case "match" -> {
                 // FIXME - make sure the MagicMatcher isValid() test works
                 if (matcher.isValid()) {
                     // set the collected properties on this matcher
@@ -347,31 +347,22 @@ public class MagicParser extends DefaultHandler implements ContentHandler, Error
                         m.addSubMatcher(matcher);
                     }
                 }
-
                 matcher = null;
                 properties = null;
+            }
 
-                // restore matcher from the stack if we have an /matcher-list
-                break;
-            case "match-list":
+            // restore matcher from the stack if we have an /matcher-list
+            case "match-list" -> {
                 if (stack.size() > 0) {
                     matcher = stack.get(stack.size() - 1);
                     // pop from the stack
                     stack.remove(matcher);
                 }
-                break;
-            case "mimetype":
-                isMimeType = false;
-                break;
-            case "extension":
-                isExtension = false;
-                break;
-            case "description":
-                isDescription = false;
-                break;
-            case "test":
-                isTest = false;
-                break;
+            }
+            case "mimetype" -> isMimeType = false;
+            case "extension" -> isExtension = false;
+            case "description" -> isDescription = false;
+            case "test" -> isTest = false;
         }
     }
 

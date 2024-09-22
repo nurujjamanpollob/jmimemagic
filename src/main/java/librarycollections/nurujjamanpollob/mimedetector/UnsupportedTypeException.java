@@ -2,22 +2,22 @@
 jMimeMagic (TM) is a Java Library for determining the content type of files or streams
 Copyright (C) 2003-2017 David Castro
 */
-package net.sf.jmimemagic;
+package librarycollections.nurujjamanpollob.mimedetector;
 
 /**
- * Basic JMimeMagic parse exception. This is simply a holder to identify a parsing problem. It
- * should be extended to identify more specific issues.
+ * JMimeMagic unsupported test type exception. This exception is thrown when an unsupported
+ * test type is specified in a mime magic test
  *
  * @author $Author: arimus $
  * @version $Revision: 1.1 $
  */
 @SuppressWarnings({"unused"})
-public class MagicParseException extends Exception
+public class UnsupportedTypeException extends Exception
 {
     /**
      * Default constructor
      */
-    public MagicParseException()
+    public UnsupportedTypeException()
     {
         super();
     }
@@ -27,7 +27,7 @@ public class MagicParseException extends Exception
      * 
      * @param message The error message for this exception
      */
-    public MagicParseException(String message)
+    public UnsupportedTypeException(String message)
     {
         super(message);
     }
@@ -37,7 +37,7 @@ public class MagicParseException extends Exception
      * 
      * @param cause The throwable on which we'll base this exception
      */
-    public MagicParseException(Throwable cause)
+    public UnsupportedTypeException(Throwable cause)
     {
         super(cause);
     }
@@ -48,7 +48,7 @@ public class MagicParseException extends Exception
      * @param message The message
      * @param cause The target Throwable
      */
-    public MagicParseException(String message, Throwable cause)
+    public UnsupportedTypeException(String message, Throwable cause)
     {
         super(message, cause);
     }
