@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <project>
 	<pomVersion>3</pomVersion>
-	<id>jmimemagic</id>
-	<name>Java Mime Magic Library</name>
-	<currentVersion>0.1.2</currentVersion>
+	<id>mimedetector</id>
+	<name>Java Mime Detector Library</name>
+	<currentVersion>0.1</currentVersion>
 	<organization>
 		<name>none</name>
 	</organization>
-	<inceptionYear>2003</inceptionYear>
-	<package>net.sf.jmimemagic</package>
+	<inceptionYear>2024</inceptionYear>
+	<package>librarycollections.nurujjamanpollob.mimedetector</package>
 	
 	<shortDescription>Determine the content type of files or streams.</shortDescription>
 
 	<description>
-		jMimeMagic is a Java library for determining the content type of files or streams.
+		Mimedetector is a Java library for determining the content type of files or streams.
 	</description>
 
 	<repository>
@@ -81,7 +81,15 @@
 			<id>ndjones</id>
 			<email>ndjones@users.sourceforge.net</email>
 			<organization>jmimemagic</organization>
-		</developer>		
+		</developer>
+
+
+		<developer>
+			<name>Nurujjaman Pollob</name>
+			<id>njpollob</id>
+			<email>ndjones@users.sourceforge.net</email>
+			<organization>jmimemagic</organization>
+		</developer>
 	</developers>
 	
 	<!-- J A R  R E S O U R C E S -->

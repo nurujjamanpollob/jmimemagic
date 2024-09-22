@@ -157,6 +157,16 @@ public class Magic
         throws MagicParseException, MagicMatchNotFoundException, MagicException
     {
 
+        // if byte is null or empty
+        if (data == null || data.length == 0) {
+            // if the byte is null
+            if (data == null) {
+                throw new MagicException("Byte array is null, cannot extract mime type");
+            } else {
+                throw new MagicException("Byte array is empty, cannot extract mime type");
+            }
+        }
+
         if (!initialized) {
             initialize();
         }
@@ -218,6 +228,18 @@ public class Magic
         throws MagicParseException, MagicMatchNotFoundException, MagicException
     {
 
+        // Test if the file exists and not empty
+        if (file == null || !file.exists() || file.length() == 0) {
+            // if the file is null
+            if (file == null) {
+                throw new MagicException("File is null");
+            }  else if (!file.exists()) {
+                throw new MagicException("File does not exist at path: " + file.getAbsolutePath());
+            } else {
+                throw new MagicException("File is empty at path: " + file.getAbsolutePath());
+            }
+        }
+
         if (!initialized) {
             initialize();
         }
@@ -236,7 +258,7 @@ public class Magic
             if (pos > -1) {
                 String ext = name.substring(pos + 1);
 
-                if (!ext.equals("")) {
+                if (!ext.isEmpty()) {
 
                     Collection<MagicMatcher> c = hintMap.get(ext);
 
